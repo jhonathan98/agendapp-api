@@ -6,7 +6,7 @@
   "scripts": {
     "start": "NODE_ENV=development node --es-module-specifier-resolution=node app.js",
     "start:dev": "NODE_ENV=development nodemon --es-module-specifier-resolution=node app.js",
-    "prod": "NODE_ENV=production node --es-module-specifier-resolution=node app.js",
+    "prod": "NODE_ENV=production node --experimental-modules --es-module-specifier-resolution=node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jhonathan98",
