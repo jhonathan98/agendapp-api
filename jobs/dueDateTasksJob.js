@@ -18,7 +18,7 @@ cron.schedule('* * * * *', async () => {
         console.log("error--->",error);
     }
     
-/*
+
     const task_status_2 = await taskServices.getAll({ status: TASK_STATUS['Progress'] });
     task_status_2.map( async (item, key)=>{
         //console.log("fecha task---->",(item.due_date));
@@ -28,7 +28,6 @@ cron.schedule('* * * * *', async () => {
             console.log(`task with id ${item._id} update to due date `);
         }
     })
-    */
     console.log('cron executing...');
 });
 
