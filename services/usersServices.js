@@ -18,7 +18,7 @@ const validate = async ({email,password}) => {
                     role: user.role
                 }
                 await logsServices.create({who: user.id, log: "LOGIN USER"})
-                const token = jwt.sign(payload, environments.secret, { expiresIn: '12h' })
+                const token = jwt.sign(payload, environments.secret, { algorithm: 'HS256', expiresIn: '12h' })
                 return { token };
             }
         }
